@@ -52,6 +52,14 @@ while (true)
 
     string user = Console.ReadLine();
     bool TrueInput = false;
+
+    if (number1 > number2)
+    {
+        int num1 = number1;
+        int num2 = number2;
+        number1 = num2;
+        number2 = num1;
+    }
     while (!TrueInput)
     {
         if (user == "a")
