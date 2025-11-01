@@ -1,4 +1,4 @@
-﻿// پوریا یوسفی 
+// پوریا یوسفی 
 // تمرین 1 
 
 while (true)
@@ -56,88 +56,52 @@ while (true)
     {
         if (user == "a")
         {
-            if (number1 % 2 == 0)
+            for (int i = number1 + 1; i < number2; i++)
             {
-                Console.WriteLine(number1 + " zoj ast" + "\n******************");
-            }
-            else
-            {
-                Console.WriteLine(number1 + " fard ast" + "\n******************");
-            }
-            
-            if (number2 % 2 == 0)
-            {
-                Console.WriteLine(number2 + " zoj ast" + "\n******************");
-            }
-            else
-            {
-                Console.WriteLine(number2 + " fard ast" + "\n******************");
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i + " zoj ast.");
+                }
+                else
+                {
+                    Console.WriteLine(i + " fard ast.");
+                }
             }
 
             TrueInput = true;
         }
         else if (user == "b")
         {
-            if (IsPrime(number1))
+            for (int i = number1 + 1; i < number2; i++)
             {
-                Console.WriteLine(number1 + " aval ast" + "\n******************");
+                if (IsPrime(i))
+                {
+                    Console.WriteLine(i + " Aval ast.");
+                }
             }
-            else
-            {
-                Console.WriteLine(number1 + " aval nist" + "\n******************");
-            }
-
-            if (IsPrime(number2))
-            {
-                Console.WriteLine(number2 + " aval ast" + "\n******************");
-            }
-            else
-            {
-                Console.WriteLine(number2 + " aval nist" + "\n******************");
-            }
-            TrueInput = true;
+                TrueInput = true;
         }
         else if (user == "c")
         {
-            if (IsAeene(number1))
+            for (int i = number1 + 1; i < number2; i++)
             {
-                Console.WriteLine(number1 + " Aeenei ast" + "\n******************");
+                if (IsAeene(i))
+                {
+                    Console.WriteLine(i + " Aeene ast.");
+                }
+                
             }
-            else
-            {
-                Console.WriteLine(number1 + " Aeenei nist" + "\n******************");
-            }
-
-            if (IsAeene(number2))
-            {
-                Console.WriteLine(number2 + " Aeenei ast" + "\n******************");
-            }
-            else
-            {
-                Console.WriteLine(number2 + " Aeenei nist" + "\n******************");
-            }
-            TrueInput = true;
+                TrueInput = true;
         }
         else if (user == "d")
         {
-            if (IsKamel(number1))
+            for (int i = number1 + 1; i < number2; i++)
             {
-                Console.WriteLine(number1 + " kamel ast" + "\n******************");
+                if (IsKamel(i)){
+                    Console.WriteLine(i + " Kamel ast.");
+                }
             }
-            else
-            {
-                Console.WriteLine(number1 + " kamel nist" + "\n******************");
-            }
-
-            if (IsKamel(number2))
-            {
-                Console.WriteLine(number2 + " kamel ast" + "\n******************");
-            }
-            else
-            {
-                Console.WriteLine(number2 + " kamel nist" + "\n******************");
-            }
-            TrueInput = true;
+                TrueInput = true;
         }
         else
         {
