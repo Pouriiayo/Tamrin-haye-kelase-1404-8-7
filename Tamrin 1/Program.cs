@@ -44,7 +44,7 @@ while (true)
 
     number2 = int.Parse(input2);
 
-    Console.WriteLine("yeki az mavared zir ra entekhab konid:");
+    Console.WriteLine("Baraye adad beyn yeki az mavared zir ra entekhab konid:");
     Console.WriteLine("a : zoj ya fard boodan adad.");
     Console.WriteLine("b : aval boodan adad");
     Console.WriteLine("c : Aeene boodan adad");
@@ -60,8 +60,15 @@ while (true)
         number1 = num2;
         number2 = num1;
     }
+
     while (!TrueInput)
     {
+        if (number1 == number2)
+        {
+            Console.WriteLine("adady beyn in do vojood nadarad");
+            TrueInput = true;
+        }
+
         if (user == "a")
         {
             for (int i = number1 + 1; i < number2; i++)
@@ -114,7 +121,7 @@ while (true)
         else
         {
             TrueInput = false;
-            Console.WriteLine("yeki az mavared zir ra entekhab konid:");
+            Console.WriteLine("Baraye adad beyn yeki az mavared zir ra entekhab konid:");
             Console.WriteLine("a : zoj ya fard boodan adad.");
             Console.WriteLine("b : aval boodan adad");
             Console.WriteLine("c : Aeene boodan adad");
