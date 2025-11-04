@@ -1,4 +1,6 @@
-﻿float sumAV = 0;
+//پوریا یوسفی
+//تمرین 6
+float sumAV = 0;
 float sumV = 0;
 while (true)
 {
@@ -36,3 +38,4 @@ else
 {
     Console.WriteLine("nashod");
 }
+
